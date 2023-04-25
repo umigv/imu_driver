@@ -9,7 +9,7 @@ def write_calibration(x, y, z):
         b'\x00' * 16,
         # b'\x70\x02\xD7\x00\x2A\xFF\xFF\xFF\x00\x00\x00\x00\xE8\x03\x17\x03',
     ])
-    with open("NDOF_calibration", "wb") as f:
+    with open("IMU_calibration", "wb") as f:
         f.write(payload)
 
 if __name__ == '__main__':
